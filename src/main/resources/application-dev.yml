@@ -1,0 +1,5 @@
+#spring:
+# message: Hello From Development Environment
+#
+#server:
+#    port: 9091

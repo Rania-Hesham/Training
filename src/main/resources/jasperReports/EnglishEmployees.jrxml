@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EnglishEmployees" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="5e2085b1-1758-4b84-be11-c7e42e2e4897">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+    <queryString language="SQL">
+        <![CDATA[SELECT * FROM employee]]>
+    </queryString>
+    <field name="id" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.name" value="id"/>
+        <property name="com.jaspersoft.studio.field.label" value="id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+    </field>
+    <field name="name" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="name"/>
+        <property name="com.jaspersoft.studio.field.label" value="name"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+    </field>
+    <field name="address" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="address"/>
+        <property name="com.jaspersoft.studio.field.label" value="address"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+    </field>
+    <field name="department_id" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.name" value="department_id"/>
+        <property name="com.jaspersoft.studio.field.label" value="department_id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+    </field>
+    <variable name="id1" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{id}]]></variableExpression>
+    </variable>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="15" splitType="Stretch">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="69" splitType="Stretch">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <staticText>
+                <reportElement x="122" y="0" width="330" height="40" isPrintWhenDetailOverflows="true" forecolor="#3333FF" backcolor="#FFFFFF" uuid="69a57f38-46ab-435d-9fe3-20ff0556b6a9"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="26" isBold="true" isUnderline="false"/>
+                    <paragraph lineSpacingSize="2.0"/>
+                </textElement>
+                <text><![CDATA[Employees Data]]></text>
+            </staticText>
+            <image>
+                <reportElement x="60" y="0" width="70" height="49" isPrintWhenDetailOverflows="true" uuid="50d42a9d-9ce4-45dd-a138-7c38aaee190d"/>
+                <imageExpression><![CDATA["C:/Users/AhmedHesham/Desktop/R.png"]]></imageExpression>
+            </image>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="30" splitType="Stretch">
+            <staticText>
+                <reportElement x="10" y="0" width="112" height="30" forecolor="#0000FF" uuid="61c7280b-fa49-4ae0-9953-b79f1f3285d9"/>
+                <box padding="4">
+                    <pen lineWidth="1.0" lineStyle="Solid" lineColor="#000066"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16"/>
+                </textElement>
+                <text><![CDATA[Employee_ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="122" y="0" width="150" height="30" forecolor="#0000FF" uuid="a4f949af-476f-4771-b77c-27c3cea8d5aa"/>
+                <box padding="4">
+                    <pen lineStyle="Solid" lineColor="#000066"/>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16"/>
+                </textElement>
+                <text><![CDATA[Employee_Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="272" y="0" width="150" height="30" forecolor="#0000FF" uuid="c2dc5cad-0fd2-4ccf-becf-37463af69c7f"/>
+                <box padding="4">
+                    <pen lineWidth="1.0" lineStyle="Solid" lineColor="#000066"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16"/>
+                </textElement>
+                <text><![CDATA[Employee_Address]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="422" y="0" width="114" height="30" forecolor="#0000FF" uuid="dd019691-c386-4359-beba-f9e91cee61a0"/>
+                <box padding="4">
+                    <pen lineStyle="Solid" lineColor="#000066"/>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000066"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000066"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000066"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000066"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16"/>
+                </textElement>
+                <text><![CDATA[Department_Id]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="40" splitType="Stretch">
+            <textField>
+                <reportElement x="10" y="0" width="112" height="40" forecolor="#CC66FF" uuid="bb501e0a-9f38-4fc1-8a88-6d6acba078ea">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06661dad-7153-4db9-bb6d-587d84cc6705"/>
+                </reportElement>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="122" y="0" width="150" height="40" forecolor="#CC66FF" uuid="92bde0be-8522-4cc9-a77f-dc7d1f5ed93c">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="354484d0-849d-490a-9555-80bdcbc6609b"/>
+                </reportElement>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#996699"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="272" y="0" width="150" height="40" forecolor="#CC66FF" uuid="b4ebc442-7ee5-499f-b131-86fe29e90493">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4688dd1a-093c-4665-94ea-1fc600941358"/>
+                </reportElement>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="422" y="0" width="114" height="40" forecolor="#CC66FF" uuid="aa59631e-c8c1-4907-bbf5-af9cf3c79c75">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="978e8efb-6ba2-4244-89aa-08c238b30ce2"/>
+                </reportElement>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#CC66FF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{department_id}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="50"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="40" splitType="Stretch">
+            <textField pattern="M/d/yyyy   h:mm a">
+                <reportElement positionType="FixRelativeToBottom" x="-11" y="5" width="175" height="30" uuid="ea031056-de6d-4582-9db6-aa1780fc637f"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18"/>
+                </textElement>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="270" y="10" width="60" height="30" uuid="88d7e58c-2955-4c5c-9ab1-3f1bf24abc2d"/>
+                <textElement>
+                    <font size="16"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="410" y="10" width="90" height="30" uuid="cc01dd53-4c09-4346-b4bf-6b6d2041ba46"/>
+                <textElement textAlignment="Right">
+                    <font size="16"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement x="500" y="10" width="90" height="30" uuid="e5b6b19a-5e61-4c7a-b54a-f7910f7af3d8"/>
+                <textElement textAlignment="Left">
+                    <font size="16"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band height="40" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="10" width="90" height="30" uuid="36e1affd-489a-43da-b8f2-7e262fc0d733"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[#Employees ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="90" y="10" width="50" height="30" uuid="d060ea5d-850e-436c-8c85-468adb2b4601"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{id1}]]></textFieldExpression>
+            </textField>
+        </band>
+    </summary>
+</jasperReport>
